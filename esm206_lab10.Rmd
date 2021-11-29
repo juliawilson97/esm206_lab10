@@ -61,9 +61,20 @@ say("I love tacos!", by = "shark")
 say("Hi Evie", "egret", by_color = "cyan", what_color = "pink")
 ```
 
-## use this for everything
+## usethis for everything
 
 updating R profile :) 
+
+R Project first, then git & GitHub repo:  
+
+- usethis::use_git()
+- usethis::use_github()
+
+It will automatically send you to github where you can branch, rename, and then copy and paste the code it supplies. Paste the code into terminal. Refresh your Git sections and the arrows for pull/push should be lit up now. 
+
+## paletter: aggregated color palettes 
+
+
 
 
 
