@@ -1,0 +1,76 @@
+---
+title: "Lab 10"
+author: "Julia Wilson"
+date: "11/29/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# Attach Packages
+library(tidyverse)
+library(here)
+library(janitor)
+library(sf)
+library(beepr)
+library(praise)
+library(cowsay)
+library(usethis)
+library(paletteer)
+```
+
+## beepr::beep()
+
+Use `beep()` to give yourself an audio alert
+
+## For loop + beep 
+
+Notes: 
+Don't see for loops a lot bc there are functions that do this for you, so you don't have to write for loops. We are going to create 99 bottles of beer on the wall. We will create a sequence from 1 to 99 and then reverse it. 
+
+rev(seq(1:99))
+
+rev: is a reverse function
+
+i = element 
+
+paste these different pieces together into a string: print(past(i, ""))
+
+
+```{r, eval = FALSE}
+for (i in rev(seq(1:99))) {
+  print(paste(i, "bottles of beer on the wall"))
+} 
+
+beep(4)
+```
+
+## Praise is nice
+
+```{r}
+praise("${EXCLAMATION}!!! This code works ${adverb_manner}!")
+
+praise("Holy ${creating}, Batman - this code works ${ADVERB_MANNER}!")
+```
+
+## cowsay::say to have characters say something 
+
+```{r}
+say("I love tacos!", by = "shark")
+say("Hi Evie", "egret", by_color = "cyan", what_color = "pink")
+```
+
+## use this for everything
+
+updating R profile :) 
+
+
+
+
+
+
+
+
+
+
